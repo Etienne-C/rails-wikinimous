@@ -13,3 +13,12 @@
  *= require_tree .
  *= require_self
  */
+
+
+h1, h2 {
+  color: #337ab7;
+  text-decoration: none;
+}
+.form-height{
+  height: 200px;
+}

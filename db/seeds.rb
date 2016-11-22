@@ -5,3 +5,14 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+# db/seeds.rb
+require 'faker'
+
+# Creating 100 fake restaurants
+10.times do
+   article = Article.new(
+     title:    Faker::Lorem.sentence,
+     content: Faker::Lorem.paragraphs(5),
+   )
+   article.save!
+end

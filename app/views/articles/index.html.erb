@@ -1,0 +1,14 @@
+<div class="container">
+
+  <% @articles.each do |article| %>
+    <div class="row">
+      <div class="col-xs-2"></div>
+      <div class="col-xs-8" >
+        <h2> <%= link_to article.title, article_path(article) %> </h2>
+        <p> <%= article.content.first(150) %>... </p>
+      </div>
+      <div class="col-xs-2"></div>
+      </div>
+  <% end %>
+
+</div>

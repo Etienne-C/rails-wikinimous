@@ -1,0 +1,27 @@
+<div class="container">
+  <div class="row">
+    <div class="col-xs-2"></div>
+    <div class="col-xs-8" >
+      <h1 class="pull-left"> <%= @article.title %>
+      <%= link_to '<i class="fa fa-pencil-square-o" aria-hidden="true" ></i>'.html_safe, edit_article_path %>
+      <%= link_to '<i class="fa fa-trash" aria-hidden="true"></i>'.html_safe, article_path(@article), method: :delete, data: { confirm: "Are you sure?" } %>
+      </h1>
+    </div>
+    <div class="col-xs-2"></div>
+  </div>
+
+  <div class="row">
+    <div class="col-xs-2"></div>
+    <div class="col-xs-8" >
+      <p> <%= @article.content %> </p><br><br><br>
+      <%= link_to "<- Back to the list", articles_path %>
+    </div>
+    <div class="col-xs-2"></div>
+  </div>
+
+</div>
+
+
+
+
+
